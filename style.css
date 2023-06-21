@@ -1,0 +1,145 @@
+:root {
+    /* Primary colors */
+    --colorPrimary1: hsl(179, 62%, 43%);
+    --colorPrimary2: hsl(71, 73%, 54%);
+    /* Neutral colors */
+    --colorNeutral1: hsl(179, 62%, 43%);
+    --colorNeutral1: hsl(218, 22%, 67%);
+    /* Fonts */
+    --text-font: 16px;
+    --font-forThisPage: "exo";
+  }
+
+  *{
+    margin: 0px;
+  }
+
+  body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #e2ebf4;
+    /* height: 100vh; */
+    width: 100vw;
+    /* border: solid black 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  main{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 40px;
+    /* padding: 10px; */
+    font-family: var(--font-forThisPage);
+    width: 60%;
+    /* height: 46%; */
+    /* border: solid black 10px; */
+
+  }
+
+  section{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 20px;
+    color: #FFFFFF;
+
+  }
+
+  .section1{
+    /* height: 160px; */
+    background-color: #FFFFFF;
+    color: #B8BBBF;
+    gap: 14px;
+    width: fit-content;
+  }
+  .section1 h3{
+    color: #30AAAC;
+    font-weight: 900;
+  }
+  .section1 .text{
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  .trial{
+    color: #C1D65E;
+  }
+  .section2{
+    /* height: 150px; */
+    background-color: #2AACB0;
+    gap: 10px;
+  }
+
+  .section2 h3{
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  .emph{
+    font-size: 1.6em;
+    font-weight: bolder;
+  }
+
+  .section2 button{
+    background-color: #BFDF32;
+    color: #FFFFFF;
+    border-style: none;
+    font-size: 1.1em;
+    padding: 8px 16px; 
+    margin-top: 16px;
+  }
+  .section2 button:hover{
+    background-color: #61711b;
+  
+  }
+  .section3{
+    /* height: 150px; */
+    background-color: #4ABEBD;
+    gap: none;
+    height: 150p;
+  }
+
+  .section3 h3{
+    margin-bottom: 10px;
+  }
+
+  .section3 p{
+    color: #9DF1F3;
+    margin-bottom: 2px;
+    font-size: 12px;
+  }
+
+@media screen and (min-width: 401px) {
+    body {
+      background-color: lightgreen;
+    }
+
+    section{
+
+    }
+
+
+  }
+
+@media screen and (min-width: 1440px) {
+body {
+    background-color: rgb(155, 169, 251);
+    height: 100vh;
+
+}
+
+main{
+    grid-template-columns: auto auto
+}
+.section1{
+    grid-area: 1 / 1 / span 2 / span 2
+}
+}
+
+  
